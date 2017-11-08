@@ -5,14 +5,15 @@ Pod::Spec.new do |s|
   s.summary      = "Build-in activity indicator view button."
   s.license      = "MIT"
   s.homepage     = "https://github.com/hussaan-s/HSActivityButton"
-# s.screenshots = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
+# s.screenshots  = "www.example.com/screenshots_1.gif", "www.example.com/screenshots_2.gif"
   s.author       = { "Hussaan S" => "hussaan.s@gmail.com" }
-  s.require_arc   = true
+  s.requires_arc = true
+  s.source       = { :git => 'https://github.com/hussaan-s/HSActivityButton.git', :tag => s.version }
 
   s.ios.deployment_target = "9.0"
 
-  s.source_files  = "HSActivityButton/**/*.swift"
+  s.source_files = "HSActivityButton/**/*.{swift,h}"
 
-  s.framework  = "UIKit"
+  s.framework    = "UIKit"
 
 end
