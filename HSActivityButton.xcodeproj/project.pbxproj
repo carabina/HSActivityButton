@@ -8,12 +8,14 @@
 
 /* Begin PBXBuildFile section */
 		A4FB4FF61FB2CE820037E13E /* HSActivityButton.h in Headers */ = {isa = PBXBuildFile; fileRef = A4FB4FF41FB2CE820037E13E /* HSActivityButton.h */; settings = {ATTRIBUTES = (Public, ); }; };
+		A4FB4FFD1FB2E5E20037E13E /* HSActivityButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = A4FB4FFC1FB2E5E20037E13E /* HSActivityButton.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
 		A4FB4FF11FB2CE820037E13E /* HSActivityButton.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = HSActivityButton.framework; sourceTree = BUILT_PRODUCTS_DIR; };
 		A4FB4FF41FB2CE820037E13E /* HSActivityButton.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = HSActivityButton.h; sourceTree = "<group>"; };
 		A4FB4FF51FB2CE820037E13E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		A4FB4FFC1FB2E5E20037E13E /* HSActivityButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HSActivityButton.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -48,6 +50,7 @@
 			children = (
 				A4FB4FF41FB2CE820037E13E /* HSActivityButton.h */,
 				A4FB4FF51FB2CE820037E13E /* Info.plist */,
+				A4FB4FFC1FB2E5E20037E13E /* HSActivityButton.swift */,
 			);
 			path = HSActivityButton;
 			sourceTree = "<group>";
@@ -95,6 +98,7 @@
 				TargetAttributes = {
 					A4FB4FF01FB2CE820037E13E = {
 						CreatedOnToolsVersion = 9.0;
+						LastSwiftMigration = 0900;
 						ProvisioningStyle = Automatic;
 					};
 				};
@@ -131,6 +135,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				A4FB4FFD1FB2E5E20037E13E /* HSActivityButton.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -253,6 +258,7 @@
 		A4FB4FFA1FB2CE820037E13E /* Debug */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
@@ -266,6 +272,7 @@
 				PRODUCT_BUNDLE_IDENTIFIER = com.SST.HSActivityButton;
 				PRODUCT_NAME = "$(TARGET_NAME:c99extidentifier)";
 				SKIP_INSTALL = YES;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
 				SWIFT_VERSION = 4.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
 			};
@@ -274,6 +281,7 @@
 		A4FB4FFB1FB2CE820037E13E /* Release */ = {
 			isa = XCBuildConfiguration;
 			buildSettings = {
+				CLANG_ENABLE_MODULES = YES;
 				CODE_SIGN_IDENTITY = "";
 				CODE_SIGN_STYLE = Automatic;
 				DEFINES_MODULE = YES;
